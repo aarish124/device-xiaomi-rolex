@@ -1,4 +1,4 @@
-#
+=#
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2018-2019 The LineageOS Project
 #
@@ -187,7 +187,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 VENDOR_SECURITY_PATCH := 2019-06-05
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/Android.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_t
 
 # We modify several neverallows, so let the build proceed
