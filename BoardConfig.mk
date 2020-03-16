@@ -19,6 +19,8 @@ DEVICE_PATH := device/xiaomi/rolex
 
 TARGET_USES_NON_LEGACY_POWERHAL := true
 
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 TARGET_NO_BOOTLOADER := true
@@ -187,7 +189,6 @@ TARGET_USES_OLD_MNC_FORMAT := true
 VENDOR_SECURITY_PATCH := 2019-06-05
 
 # SELinux
-include device/qcom/sepolicy/Android.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy_t
 
 # We modify several neverallows, so let the build proceed
